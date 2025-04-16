@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+    - name: COVID19_Epidemiological_Data
+      description: 'Ceci est un test.'
+      database: COVID19_Epidemiological_Data
+      schema: PUBLIC
+      tables:
+        - name: DEMOGRAPHICS
+          description: 'Données démographiques'
+
+models:
+  - name: covid_demographics
+    description: "Modèle pour les données démographiques COVID19"
+    columns:
+      - name: id
+        description: "Identifiant unique"
+        tests:
+          - unique
+          - not_null
