@@ -12,9 +12,13 @@ sources:
 models:
   - name: covid_demographics
     description: "Modèle pour les données démographiques COVID19"
+
+  - name: country_code
+    description: "A starter dbt model"
     columns:
-      - name: id
-        description: "Identifiant unique"
+      - name: name
         tests:
-          - unique
+          - switzerland
           - not_null
+          - unique
+         
