@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: music_src
+    database: MUSIC_DBT
+    schema: public
+    tables:
+      - name: artist
+      - name: album
+      - name: track
+      - name: genre
+      - name: mediatype
+      - name: playlist
+      - name: playlisttrack
